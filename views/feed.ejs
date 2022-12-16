@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+  <div class="container">
+    <div class="container mt-5 col-3">
+      <a class="button" href="/user/profile">Return to Profile</a>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <ul class="row list-unstyled">
+        <% for(var i=0; i<pics.length; i++) {%>
+          <li class="col-6 justify-content-between mt-5">
+            <a href="/user/<%= pics[i]._id%>">
+              <img class="img-fluid" src="<%= pics[i].image%>">
+            </a>
+          </li>
+        <% } %>
+        </ul>
+    </div>
+  </div>  
+  
+<%- include('partials/footer') -%>

@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+<div class="container">
+<div class="row justify-content-center mt-5">
+  <h2>Update</h2>
+  <form action="/user/updatePic/<%= pic.id %>?_method=PUT" enctype="multipart/form-data" method="POST">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="<%= pic.title %>">
+    </div>
+    <div class="mb-3">
+      <label for="caption" class="form-label">Caption</label>
+      <textarea class="form-control" id="caption" name="caption" placeholder="<%= pic.caption %>"></textarea>
+    </div>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+</div>
+<%- include('partials/footer') -%>

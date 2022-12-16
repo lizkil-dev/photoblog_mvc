@@ -1,0 +1,36 @@
+<%- include('partials/header') -%>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-10">
+        <h2>
+          <%= pic.title %>
+        </h2>
+        <img class="img-fluid" src="<%= pic.image%>" />
+        <div class="row justify-content-around">
+          <p>
+            <%= pic.caption %></br>Created by: <%= creator %>
+          </p>
+        </div>
+        <div class="row.aln-left">
+          <form class="col-1" action="/user/likePic/<%= pic.id %>?_method=PUT" method="POST">
+            <button class="button fa fa-heart" type="submit"></button>
+            <span class="col-6">Likes: <%= pic.likes %></span>
+          </form>          
+        </div>        
+        <div class="justify-content">
+          <div class="row.aln-left">
+            <a class="button" href="/user/feed">Return to Feed</a>
+          </div>
+          <div class="row.aln-right">    
+            <%if(pic.user==user.id){ %>
+            <form action="/user/deletePic/<%= pic.id %>?_method=DELETE" method="POST">
+              <button class="button" type="submit">Delete</button>
+            </form>
+            <%}%>
+          </div>
+    </div>
+
+  </div>
+  </div>
+
+  <%- include('partials/footer') -%>
