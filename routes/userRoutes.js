@@ -17,10 +17,6 @@ router.post("/createPic", upload.single("file"), userCon.createPic);
 
 router.put("/likePic/:id", userCon.likePic);
 
-// router.get("/updatePic/:id", ensureAuth, userCon.getUpdatePic)
-
-// router.put("/updatePic/:id", ensureAuth, userCon.updatePic); 
-
 router.delete("/deletePic/:id", userCon.deletePic); 
 
 module.exports = router

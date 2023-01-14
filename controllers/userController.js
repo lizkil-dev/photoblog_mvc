@@ -76,46 +76,6 @@ likePic: async (req, res) => {
   }
 },
 
-// getUpdatePic : async (req, res) => {
-//   try {
-//     const pic = await Pic.findById(req.params.id)
-
-//     if(!pic) {
-//       res.status(400)
-//       throw new Error('Picture not found')
-//     }
-
-//     res.render("updatePic.ejs", { pic: pic, user: req.user});   
-
-//   } catch (err) {
-//     console.log(err);
-//   }
-// },
-
-// updatePic: async (req, res) => {
-//   try {
-    // const pic = await Pic.findById(req.params.id)
-    // console.log(req.body);
-
-    // if(!pic) {
-    //   res.status(400)
-    //   throw new Error('Picture not found')
-    // }
-    
-  //  await Pic.findByIdAndUpdate(req.params.id,{ 
-  //     title: req.body.title,
-  //     caption : req.body.caption,},
-  //     {new: true})
-    
-    
-    // const creator = await User.findById(pic.user)
-    // res.render("pic.ejs", { pic: updatedPic, user: req.user, creator: creator.userName});   
-     
-//   } catch (err) {
-//     console.log(err);
-//   }
-// },
-
 deletePic : async (req, res) => {
   try {
     const pic = await Pic.findById(req.params.id)
