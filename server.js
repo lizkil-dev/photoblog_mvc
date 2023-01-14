@@ -16,7 +16,7 @@ const userRoutes = require("./routes/userRoutes")
 //Connect to Database
 connectDB();
 
-// Passport config
+//Passport config
 require("./config/passport")(passport);
 
 //Using EJS for views
