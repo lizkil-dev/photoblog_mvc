@@ -32,4 +32,4 @@ API_SECRET = your cloudinary api secret
 npm start
 
 ## Optimizations
-For future implementations, I would like to add a search option and a comment function.
+For future implementations I would like to add a comment function.
