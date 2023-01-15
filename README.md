@@ -32,4 +32,4 @@ API_SECRET = your cloudinary api secret
 npm start
 
 ## Optimizations
-For future implementations, I would like to add a search option and a functionality for users to make their photos public or private.
+For future implementations, I would like to add a search option and a comment function.
