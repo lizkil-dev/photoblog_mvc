@@ -5,10 +5,6 @@ Created with the concepts of CRUD, and built with MVC Architecture.
 
 [screen-capture.webm](https://user-images.githubusercontent.com/102907651/208216347-6c78e58a-d8e5-47e9-aa3d-2ef5e145ff65.webm)
 
-## Visit the live website here: 
-
-https://lizkil-photoblog.herokuapp.com/
-
 ## How it's made
 
 Tech: Express, Node, MongoDB, Mongoose, EJS, Cloudinary, Multer, PassportJS, 
